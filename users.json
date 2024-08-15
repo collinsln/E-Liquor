@@ -1,0 +1,14 @@
+{
+    "users": [
+        {"id": 1, "firstName": "John", "lastName": "Doe", "email": "john.doe@example.com", "password": "password1"},
+        {"id": 2, "firstName": "Jane", "lastName": "Doe", "email": "jane.doe@example.com", "password": "password2"},
+        {"id": 3, "firstName": "James", "lastName": "Smith", "email": "james.smith@example.com", "password": "password3"},
+        {"id": 4, "firstName": "Emily", "lastName": "Johnson", "email": "emily.johnson@example.com", "password": "password4"},
+        {"id": 5, "firstName": "Michael", "lastName": "Brown", "email": "michael.brown@example.com", "password": "password5"},
+        {"id": 6, "firstName": "Sarah", "lastName": "Davis", "email": "sarah.davis@example.com", "password": "password6"},
+        {"id": 7, "firstName": "David", "lastName": "Miller", "email": "david.miller@example.com", "password": "password7"},
+        {"id": 8, "firstName": "Jessica", "lastName": "Wilson", "email": "jessica.wilson@example.com", "password": "password8"},
+        {"id": 9, "firstName": "Daniel", "lastName": "Moore", "email": "daniel.moore@example.com", "password": "password9"},
+        {"id": 10, "firstName": "Jennifer", "lastName": "Taylor", "email": "jennifer.taylor@example.com", "password": "password10"}
+    ]
+}

@@ -1,0 +1,204 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+body,
+h1 {
+  margin: 0;
+  padding: 50px;
+  color: #2db438;
+  text-decoration: #282c34;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+.App h1 {
+  color: rgb(165, 53, 187);
+  text-align: center;
+  font-size: x-large;
+  font-weight: 1000;
+}
+.App h2 {
+  color: #333333;
+}
+.sign {
+  padding-top: 20px;
+  margin-top: 20px;
+}
+
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 0px;
+  justify-items: center;
+  grid-gap: 0px;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 50px;
+  width: 100%;
+
+  overflow: hidden;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: 15px;
+}
+
+/* app.css */
+
+/* Footer Styles */
+footer {
+  background-color: #333333;
+  color: #ffffff;
+  padding: 20px;
+  transition: transform 0.3s ease;
+}
+
+footer:hover {
+  transform: translateY(-5px);
+}
+
+footer .social-icons {
+  display: flex;
+  gap: 10px;
+}
+
+footer .social-icons a {
+  color: #ffffff;
+}
+
+footer .social-icons a:hover {
+  color: #00ff00;
+}
+
+footer .apply-button {
+  text-align: right;
+}
+
+footer .apply-button button {
+  background-color: #ff4500;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+footer .apply-button button:hover {
+  background-color: #ff6347;
+}
+
+.buttons {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.card {
+  position: relative;
+  background-color: transparent;
+  width: 250px;
+  height: 550px;
+  perspective: 1000px;
+  transform: perspective(750px) translate3d(0px, 0px, -250px) rotateX(27deg)
+    scale(0.9, 0.9);
+  border-radius: 20px;
+  border: 1px solid #e6e6e6;
+  box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.3);
+  transition: 0.4s ease-in-out transform, 0.4s ease-in-out box-shadow;
+}
+
+.card:hover {
+  transform: translate3d(0px, 0px, -250px);
+  box-shadow: 0 50px 80px -20px rgba(32, 195, 187, 0.5);
+}
+
+.card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.card:hover .card-inner {
+  transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+  position: absolute;
+  width: 100%;
+  height: 550px;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border-radius: 16px;
+  transition: opacity 0.4s;
+}
+
+.card-front img,
+.card-back img {
+  width: 100%;
+  height: 93%;
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+.card:hover .card-back {
+  opacity: 1;
+}
+
+.card-back {
+  color: #ffffff;
+  box-shadow: 0 5px 20px #3498db;
+  transform: rotateY(180deg);
+  opacity: 0;
+}
+
+.marquee-container {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  z-index: 9999;
+  overflow: hidden;
+  bottom: 0;
+  background-color: #5ac8fa;
+}
+
+.marquee {
+  white-space: nowrap;
+  position: relative;
+  width: 100%;
+}
+
+#cart {
+  position: fixed;
+  top: 5px;
+  left: 7px;
+  overflow: hidden;
+  z-index: 9999;
+}
+
+.stack {
+  position: fixed;
+  right: 30px;
+  top: 5px;
+  overflow: hidden;
+  z-index: 9999;
+}
