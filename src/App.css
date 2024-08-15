@@ -4,7 +4,10 @@ header {
   align-items: center;
   padding: 10px 20px;
 }
-body,
+body{
+background-color: #b73c3c;
+}
+
 h1 {
   margin: 0;
   padding: 50px;

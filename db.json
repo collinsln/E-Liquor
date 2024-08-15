@@ -5,7 +5,7 @@
       "name": "Whiskey",
       "type": "Spirit",
       "brand": "Jack Daniel's",
-      "volume_ml": 750,
+      "volume_ml": 1000,
       "price_usd": 25.99,
       "availability": "In-stock",
       "image_url": "https://i.pinimg.com/474x/18/b3/3b/18b33b396ba808ef7efeb3a2f195d960.jpg"
